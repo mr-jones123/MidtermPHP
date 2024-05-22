@@ -1,0 +1,36 @@
+:root{
+--eggplant: #5d4e60ff;
+--mountbatten-pink: #826c7fff;
+--rose-quartz: #a88facff;
+--pink-lavender: #d4b2d8ff;
+--thistle: #efcefaff;
+--white: #FEFAF6; 
+--primaryfont-family: 'General Sans', sans-serif;
+--secondaryfont-family: 'Trench Slab', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--white);
+}
+
+p,h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+p{
+    font-family: var(--secondaryfont-family);
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primaryfont-family);
+    font-weight: 700;
+}
