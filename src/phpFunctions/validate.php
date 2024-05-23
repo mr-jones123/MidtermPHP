@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-
-$users = []; 
+// Initialize users array in session
+$_SESSION['users'] = []; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect login details
@@ -11,7 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $isValidUser = false;
 
-    foreach ($users as $user) {
+    // Loop through $_SESSION['users'] instead of $users
+    foreach ($_SESSION['users'] as $user) {
         if ($user['email'] === $email && $user['password'] === $password) { 
             $isValidUser = true;
             $_SESSION['user'] = $user;
