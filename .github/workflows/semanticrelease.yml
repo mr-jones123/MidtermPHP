@@ -2,10 +2,10 @@ name: Semantic Release
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -25,7 +25,7 @@ jobs:
             @semantic-release/release-notes-generator
             conventional-changelog-conventionalcommits
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Output new release version
         if: steps.semantic.outputs.new_release_published == 'true'
         run: |
