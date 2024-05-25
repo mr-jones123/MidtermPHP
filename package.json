@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mr-jones123/MidtermPHP.git"
+    "url": "git+https://github.com/mr-jones123/MidtermPHP.git"
   },
   "author": "",
   "license": "ISC",
