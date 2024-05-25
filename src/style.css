@@ -1,0 +1,102 @@
+:root{
+--eggplant: #5d4e60ff;
+--mountbatten-pink: #826c7fff;
+--rose-quartz: #a88facff;
+--pink-lavender: #d4b2d8ff;
+--thistle: #efcefaff;
+--white: #FEFAF6; 
+--primaryfont-family: 'General Sans', sans-serif;
+--secondaryfont-family: 'Trench Slab', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--white);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p,h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+p{
+    font-family: var(--secondaryfont-family);
+    font-size: 1.1rem;
+}
+p#register-text{
+    font-family: var(--primaryfont-family);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primaryfont-family);
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -1;
+}
+h1.website-title{
+    margin: 20px;
+}
+div.wrapper{
+    max-width: fit-content;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 2px solid var(--mountbatten-pink) ;
+    padding: 40px;
+    height: auto;
+    width: 35vw;
+}
+
+.wrapper h1{
+    text-align: center;
+    margin-bottom: 5vw;
+    color: var(--mountbatten-pink);
+    font-size: 2.7rem;
+}
+
+div.input-box{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.input-box input{
+    font-family: var(--secondaryfont-family);
+    width: 100%;
+    padding: 13px;
+    border-radius: 20px;
+}
+
+div.forget-password{
+    font-family: var(--secondaryfont-family);
+    font-size: 0.8rem;
+    color: var(--mountbatten-pink);
+}
+.login-register-container {
+    display: flex;
+    margin-top: 4vh;
+    align-items: baseline;
+}
+p#register-text{
+    font-family: var(--secondaryfont-family);
+    font-size: 0.8rem;
+    margin-left: 50px;
+    color: var(--mountbatten-pink);
+}
+
+.btn{
+    background-color: var(--mountbatten-pink);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: var(--secondaryfont-family);
+    color: var(--white);
+    width: 10vw;
+    cursor: pointer;
+}
