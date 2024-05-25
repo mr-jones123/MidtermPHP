@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.0.0...v1.1.0) (2024-05-25)
+
+
+### Features
+
+* register.php ([5429546](https://github.com/mr-jones123/MidtermPHP/commit/54295463d54c4070523333f7752b861fa36463d9))
+
+
+### Performance Improvements
+
+* validate.php ([a44c98d](https://github.com/mr-jones123/MidtermPHP/commit/a44c98d975bc5c8e7ef42817a84e1d2acb88f0a9))
+* validate.php ([76c1521](https://github.com/mr-jones123/MidtermPHP/commit/76c152133e0b9cd1f1fc786151613819f114686c))
+
 # 1.0.0 (2024-05-25)
 
 
