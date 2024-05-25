@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.1.0...v1.2.0) (2024-05-25)
+
+
+### Features
+
+* **markdown:** simplified the markdown for simple context ([2d21991](https://github.com/mr-jones123/MidtermPHP/commit/2d219912af84512b6096a8269ac5d27f50352eb8))
+* **markdown:** simplified the markdown for simple context ([cd80943](https://github.com/mr-jones123/MidtermPHP/commit/cd809430ff4ec823ffcccd6af43850a961ab3c96))
+
 # [1.1.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.0.0...v1.1.0) (2024-05-25)
 
 
