@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.2.0...v1.3.0) (2024-05-26)
+
+
+### Features
+
+* **regFunctions): added functions for password checking and adding user info to array, refactor(register:** removed the script part as it is replaced by regFunctions ([ea3e789](https://github.com/mr-jones123/MidtermPHP/commit/ea3e7896f17b7368cb2204971df48944b571fee2))
+
 # [1.2.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.1.0...v1.2.0) (2024-05-25)
 
 
