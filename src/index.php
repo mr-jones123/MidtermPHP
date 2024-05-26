@@ -1,7 +1,7 @@
 <?php
 include __DIR__ .'/phpFunctions/validate.php';
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
