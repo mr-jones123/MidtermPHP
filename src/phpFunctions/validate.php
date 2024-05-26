@@ -17,6 +17,6 @@
             }  
         }
         //isValidUser doesn't turn true
-        echo "Invalid account";
+        echo '<script>alert("Invalid Account")</script>'; 
     }
 ?>
