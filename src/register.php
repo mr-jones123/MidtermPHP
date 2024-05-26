@@ -1,6 +1,7 @@
 <?php
 session_start();
 include __DIR__ . '/phpFunctions/regFunctions.php';
+require  __DIR__ .'/phpFunctions/welcomeEmail.php';
 if (!isset($_SESSION['users'])) {
     $_SESSION['users'] = array();
 }
@@ -19,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (checkPasswords() == true && $firstname && $middlename && $lastname && $street && $brgy && $region && $zcode && $phone && $email && $password) {
         addUser($firstname, $middlename, $lastname, $street, $brgy, $region, $zcode, $phone, $email, $password);
+        welcomeEmail($email);
         header("Location: index.php");
         exit;
     }
@@ -107,6 +109,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <button type="submit" class="btn" value="Register">REGISTER</button>
                 </div>
             </div>
+            <br>
+            <p id="register-text" style="margin-left:8vw;">Already have an account? <a href="INDEX.php"><u>login
+                    here</u></a></p>
         </form>
     </div>
 
