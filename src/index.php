@@ -26,7 +26,7 @@ include __DIR__ .'/phpFunctions/validate.php';
                 <a href="#">Forgot Password?</a>
             </div>
             <div class="login-register-container">
-                <button type="submit" class="btn" value="Log In">Login</button>
+                <button type="submit" class="btn" value="Log In">LOGIN</button>
                 <p id="register-text">Don't have an account? <a href="register.php"><u>Register here</u></a></p>
             </div>
         </form>
