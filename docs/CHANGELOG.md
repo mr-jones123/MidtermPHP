@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.3.0...v1.4.0) (2024-05-26)
+
+
+### Features
+
+* add email notification fuctionality ([affc7ac](https://github.com/mr-jones123/MidtermPHP/commit/affc7ac3d1aa310286b4e05eb71096290f997b40))
+
 # [1.3.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.2.0...v1.3.0) (2024-05-26)
 
 
