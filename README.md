@@ -1,3 +1,5 @@
+[![ReadMeSupportPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-support.svg)](https://github.com/Safouene1/support-palestine-banner](https://www.pcrf.net/information-you-should-know/how-to-help-palestine.html#:~:text=By%20purchasing%20goods%20and%20services,specialize%20in%20Middle%20Eastern%20products.))
+
 # Video Rental System Using PHP
 
 This project is a video rental system developed using PHP. It's designed as a solution for managing video rentals in a store or a similar setting. 
