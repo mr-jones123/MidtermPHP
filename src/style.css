@@ -50,6 +50,88 @@ label {
 h1.website-title{
     margin: 20px;
 }
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background:transparent;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0),var(--white));
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--white));
+  }
+  
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+  }
+h2#header-welcome{
+    font-family: var(--secondaryfont-family);
+    font-weight:400;
+    text-align: center;
+}
+div.section-1{
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.section-1 button{
+    background-color: #5d4e60ff;
+    font-family: var(--secondaryfont-family);
+    color: var(--white);
+    padding: 16px 25px 16px 25px;
+    margin-top: 4vh;
+}
+
+div.section-2 {
+    height: 140vh;
+    margin-top: 51.146vw;
+    padding: 100px 80px 100px 80px;
+    background-color: var(--thistle);
+    font-size: 1.5rem;
+}
+
+div.section-3{
+    height: 140vh;
+    padding: 100px 80px 100px 80px;
+    background-color: var(--white);
+    font-size: 1.5rem;
+}
 div.wrapper{
     max-width: fit-content;
     margin-top: 15vh;
