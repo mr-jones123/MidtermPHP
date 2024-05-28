@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (checkPasswords() == true && $firstname && $middlename && $lastname && $street && $brgy && $region && $zcode && $phone && $email && $password) {
         addUser($firstname, $middlename, $lastname, $street, $brgy, $region, $zcode, $phone, $email, $password);
         welcomeEmail($email);
-        header("Location: index.php");
+        header("Location: /api/index.php");
         exit;
     }
 }
