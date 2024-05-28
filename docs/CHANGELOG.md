@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.4.0...v1.5.0) (2024-05-28)
+
+
+### Features
+
+* add vercel config for web hosting ([ef663e2](https://github.com/mr-jones123/MidtermPHP/commit/ef663e23479a616c8e89ad11429bb295ad61c391))
+
 # [1.4.0](https://github.com/mr-jones123/MidtermPHP/compare/v1.3.0...v1.4.0) (2024-05-26)
 
 
