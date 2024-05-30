@@ -15,9 +15,11 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 
 function welcomeEmail($email)
 {
-    $usn_email = getenv("EMAIL");
-    $app_pwd = getenv("APP_PASSWORD");
-    $smtp_host = getenv("SMTP_HOST");
+    $usn_email = $_ENV["EMAIL"];
+    $app_pwd = $_ENV["APP_PASSWORD"];
+    $smtp_host = $_ENV["SMTP_HOST"];
+
+
     try {
         //Server settings
         $mail = new PHPMailer(true);
@@ -30,12 +32,9 @@ function welcomeEmail($email)
         $mail->Port = 465;                                   
 
         //Recipients
-        $mail->setFrom($usn_email, 'Mailer');
+        $mail->setFrom($usn_email, 'The Xy');
         $mail->addAddress($email, 'The User');    
 
-        //Attachments
-        // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-        // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
@@ -58,7 +57,7 @@ function welcomeEmail($email)
         $mail->AltBody = 'tame impala';
 
         $mail->send();
-        echo 'Message has been sent';
+
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }

@@ -19,23 +19,16 @@ function addUser($firstname, $middlename, $lastname, $street, $brgy, $region, $z
         'email' => $email,
         'password' => $password
     ];
+
 }
 
 
-function checkPasswords()
+function checkPasswords($password, $confirmPassword)
 {
-    $password = $_POST['password'];
-    $confirmPassword = $_POST['cpw'];
-
-    if (strlen($password) < 8) {
-        echo '<script>alert("Password must be at least 8 letters")</script>';
-        return false;
+    if ($password == $confirmPassword) {
+        return true;
     } elseif ($password !== $confirmPassword) {
-        echo '<script>alert("Passwords do not match")</script>';
         return false;
-    } else {
-        echo '<script>alert("Successfuly made an account! Now Log In!")</script>';
-
     }
 }
 

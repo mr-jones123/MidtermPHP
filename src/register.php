@@ -1,7 +1,7 @@
 <?php
 session_start();
 include __DIR__ . '/phpFunctions/regFunctions.php';
-require  __DIR__ .'/phpFunctions/welcomeEmail.php';
+require_once  __DIR__ .'/phpFunctions/welcomeEmail.php';
 if (!isset($_SESSION['users'])) {
     $_SESSION['users'] = array();
 }
@@ -17,12 +17,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $phone = $_POST['phone'] ?? '';
     $email = $_POST['email'] ?? '';
     $password = $_POST['password'] ?? '';
+    $confirmPassword = $_POST['cpw'] ?? '';
+    echo '<script>alert("Checking 1");</script>';
 
-    if (checkPasswords() == true && $firstname && $middlename && $lastname && $street && $brgy && $region && $zcode && $phone && $email && $password) {
+    if (checkPasswords($password, $confirmPassword)== true) {
         addUser($firstname, $middlename, $lastname, $street, $brgy, $region, $zcode, $phone, $email, $password);
         welcomeEmail($email);
-        header("Location: index.php");
+        echo '<script>alert("Successfully made an account! Now Log In!"); window.location.href="index.php";</script>';
         exit;
+    } elseif  ($password !== $confirmPassword){
+        echo '<script>alert("Passwords do not match")</script>';
+        return false;
     }
 }
 ?>
@@ -114,8 +119,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     here</u></a></p>
         </form>
     </div>
-
-
     <script>
 
         function checkPasswords() {

@@ -1,8 +1,7 @@
 <?php
-    if (session_status() === PHP_SESSION_NONE) {
-        session_start();
+    if (!isset($_SESSION['users'])) {
+        $_SESSION['users'] = array();
     }
-
     if ($_SERVER['REQUEST_METHOD'] == "POST"){
         $email = $_POST['email'];
         $password = $_POST['password'];
@@ -12,7 +11,8 @@
         foreach($_SESSION['users'] as $user){
             if ($user['email'] == $email && $user['password'] == $password){
                  $isValidUser = true;
-                 header('Location: home.php');
+                 unset($_SESSION['users']);
+                 header('Location: search.php');
                  exit;
             }  
         }

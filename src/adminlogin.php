@@ -1,8 +1,3 @@
-<?php
-session_start();
-include __DIR__ .'/phpFunctions/validate.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,10 +8,10 @@ include __DIR__ .'/phpFunctions/validate.php';
     <link rel="stylesheet" href="style.css">
 
 <body>
-    <?php include 'header.php';?>
-    <div class="wrapper">
-        <form method="post">
-            <h1>Login</h1>
+    <div class="admin-pop" id="myForm">
+        
+        <form action="/action_page/php"class="wrapper">
+            <h1>Admin Login</h1>
             <div class="input-box">
                 <input type="email" placeholder="Email" name="email" required>
             </div>
@@ -27,11 +22,19 @@ include __DIR__ .'/phpFunctions/validate.php';
                 <a href="#">Forgot Password?</a>
             </div>
             <div class="login-register-container">
-                <button type="submit" class="btn" value="Log In">LOGIN</button>
-                <p id="register-text">Don't have an account? <a href="register.php"><u>Register here</u></a></p>
+                <a href="vidmanage.php" class="btn" value="Log In">LOGIN</a>
             </div>
         </form>
+       
     </div>
-</body>
+    
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
 
-</html>
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+</script>
+</body>
